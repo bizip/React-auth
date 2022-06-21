@@ -33,7 +33,8 @@ const AuthForm = () => {
           "Content-Type": "application/json"
         },
       ).then(res => {
-        toast.error('🦄 Wow so easy done!', {
+        console.log(res)
+        toast.info('🦄 Login success', {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -55,8 +56,8 @@ const AuthForm = () => {
           "Content-Type": "application/json"
 
         }).then(res => {
-
-          toast.error('🦄 Wow so easy done!', {
+          // console.log(res)
+          toast.info('🦄 success', {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
